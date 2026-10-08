@@ -149,8 +149,12 @@ SECURITY DEFINER
 SET search_path = public
 AS $$
 BEGIN
-  IF NEW.role IS DISTINCT FROM OLD.role AND NOT public.is_admin() THEN
-    RAISE EXCEPTION 'Bạn không có quyền thay đổi vai trò (role) của tài khoản.';
+  -- Chỉ chặn khi request đến từ người dùng thông thường qua API (authenticated) và không phải admin
+  -- Cho phép thay đổi từ Dashboard, SQL Editor hoặc Service Role (khi auth.role() khác 'authenticated')
+  IF NEW.role IS DISTINCT FROM OLD.role THEN
+    IF auth.role() = 'authenticated' AND NOT public.is_admin() THEN
+      RAISE EXCEPTION 'Bạn không có quyền thay đổi vai trò (role) của tài khoản.';
+    END IF;
   END IF;
   RETURN NEW;
 END;
@@ -160,6 +164,26 @@ DROP TRIGGER IF EXISTS trg_protect_profile_role ON public.profiles;
 CREATE TRIGGER trg_protect_profile_role
   BEFORE UPDATE ON public.profiles
   FOR EACH ROW EXECUTE FUNCTION public.protect_profile_role();
+
+-- ------------------------------------------------------------------------------
+-- 3.4 Tự động đồng bộ các tài khoản đã tạo trước trong auth.users vào public.profiles
+-- ------------------------------------------------------------------------------
+INSERT INTO public.profiles (id, full_name, date_of_birth, candidate_id, role)
+SELECT 
+  id,
+  COALESCE(
+    raw_user_meta_data->>'full_name',
+    raw_user_meta_data->>'name',
+    split_part(email, '@', 1)
+  ),
+  COALESCE(raw_user_meta_data->>'date_of_birth', ''),
+  COALESCE(
+    raw_user_meta_data->>'candidate_id',
+    'SBD-' || UPPER(SUBSTRING(id::text, 1, 8))
+  ),
+  'user'
+FROM auth.users
+ON CONFLICT (id) DO NOTHING;
 
 -- ==============================================================================
 -- 4. ROW LEVEL SECURITY (RLS) - BẬT CHO TẤT CẢ CÁC BẢNG
