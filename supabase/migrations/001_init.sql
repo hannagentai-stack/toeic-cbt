@@ -8,8 +8,20 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 
 -- ==============================================================================
--- 2. ĐỊNH NGHĨA CÁC BẢNG DỮ LIỆU CHÍNH (TABLES)
+-- 2. DỌN DẸP SCHEMA CŨ (NẾU CÓ) & TẠO CÁC BẢNG DỮ LIỆU CHÍNH (TABLES)
 -- ==============================================================================
+
+-- Xóa các bảng cũ của schema cũ (nếu có từ trước) để tránh xung đột cấu trúc
+DROP TABLE IF EXISTS public.attempt_answers CASCADE;
+DROP TABLE IF EXISTS public.options CASCADE;
+DROP TABLE IF EXISTS public.questions CASCADE;
+DROP TABLE IF EXISTS public.passages CASCADE;
+DROP TABLE IF EXISTS public.parts CASCADE;
+DROP TABLE IF EXISTS public.score_conversion CASCADE;
+DROP TABLE IF EXISTS public.users CASCADE;
+DROP TABLE IF EXISTS public.attempts CASCADE;
+DROP TABLE IF EXISTS public.tests CASCADE;
+DROP TABLE IF EXISTS public.profiles CASCADE;
 
 -- ------------------------------------------------------------------------------
 -- 2.1 BẢNG PROFILES (Hồ sơ người dùng / Thí sinh / Admin)
