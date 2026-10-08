@@ -29,5 +29,5 @@ psql -U postgres -d toeic_cbt_db -f seeds/002_ets_score_conversion.sql
 
 ### Cách 2: Sử dụng Supabase / DBeaver / pgAdmin
 1. Mở công cụ **SQL Editor**.
-2. Mở nội dung file [001_initial_schema.sql](file:///c:/Users/handa/OneDrive/Documents/Projects/CloneIIG/database/migrations/001_initial_schema.sql) và nhấn **Execute (Run)**.
-3. Mở tiếp file [002_ets_score_conversion.sql](file:///c:/Users/handa/OneDrive/Documents/Projects/CloneIIG/database/seeds/002_ets_score_conversion.sql) và nhấn **Execute (Run)**.
+2. Mở nội dung file `database/migrations/001_initial_schema.sql` và nhấn **Execute (Run)**.
+3. Mở tiếp file `database/seeds/002_ets_score_conversion.sql` và nhấn **Execute (Run)**.

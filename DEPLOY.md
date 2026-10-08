@@ -154,7 +154,7 @@ Mở trình duyệt ở chế độ ẩn danh (Incognito) và truy cập link Ve
 
 ### 1. Bấm F5 hoặc gõ URL trực tiếp bị lỗi "404: NOT_FOUND" trên Vercel
 * **Nguyên nhân**: Vercel chưa hiểu đây là ứng dụng React Single Page Application (SPA).
-* **Khắc phục**: Dự án đã có file [`client/vercel.json`](file:///c:/Users/handa/OneDrive/Documents/Projects/CloneIIG/client/vercel.json) với lệnh `rewrites`. Hãy kiểm tra chắc chắn bạn đã đặt **Root Directory** trên Vercel là `client`.
+* **Khắc phục**: Dự án đã có file `client/vercel.json` với lệnh `rewrites`. Hãy kiểm tra chắc chắn bạn đã đặt **Root Directory** trên Vercel là `client`.
 
 ### 2. Link bấm trong Email kích hoạt hoặc đặt lại mật khẩu nhảy về `localhost:5173`
 * **Nguyên nhân**: Chưa đổi Site URL trên Supabase.
@@ -171,7 +171,7 @@ Mở trình duyệt ở chế độ ẩn danh (Incognito) và truy cập link Ve
 * **Nguyên nhân**: Bucket `test-media` trên Supabase chưa được cấp quyền đọc hoặc file âm thanh chưa được tải lên.
 * **Khắc phục**:
   1. Vào Supabase Dashboard → **Storage** → kiểm tra bucket `test-media` đã được tạo chưa.
-  2. Đảm bảo bạn đã chạy đầy đủ file [`supabase/migrations/001_init.sql`](file:///c:/Users/handa/OneDrive/Documents/Projects/CloneIIG/supabase/migrations/001_init.sql) trong SQL Editor để kích hoạt chính sách bảo mật cho Storage.
+  2. Đảm bảo bạn đã chạy đầy đủ file `supabase/migrations/001_init.sql` trong SQL Editor để kích hoạt chính sách bảo mật cho Storage.
 
 ---
 
