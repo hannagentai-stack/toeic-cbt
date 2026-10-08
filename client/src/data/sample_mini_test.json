@@ -1,0 +1,394 @@
+{
+  "test": {
+    "title": "ETS TOEIC Mini Test - Demo 14 Questions (IIG Format)",
+    "code": "MINI_TEST_ETS_DEMO",
+    "description": "Đề thi thử rút gọn gồm 14 câu chuẩn format IIG (2 câu mỗi Part từ Part 1 đến Part 7). Thử nghiệm đầy đủ audio, hình ảnh, transcript, và giải thích chi tiết.",
+    "duration_minutes": 15,
+    "total_questions": 14,
+    "full_audio_url": "https://raw.githubusercontent.com/handa/assets/main/toeic/audio/mini_full_listening.mp3",
+    "is_published": true
+  },
+  "parts": [
+    {
+      "part_number": 1,
+      "name": "Photographs",
+      "directions_text": "Directions: For each question in this part, you will hear four statements about a picture in your test book. When you hear the statements, you must select the one statement that best describes what you see in the picture. The statements will not be printed in your test book and will be spoken only one time.",
+      "directions_audio_url": "https://raw.githubusercontent.com/handa/assets/main/toeic/audio/directions_p1.mp3",
+      "total_questions": 2
+    },
+    {
+      "part_number": 2,
+      "name": "Question-Response",
+      "directions_text": "Directions: You will hear a question or statement and three responses spoken in English. They will not be printed in your test book and will be spoken only one time. Select the best response to the question or statement.",
+      "directions_audio_url": "https://raw.githubusercontent.com/handa/assets/main/toeic/audio/directions_p2.mp3",
+      "total_questions": 2
+    },
+    {
+      "part_number": 3,
+      "name": "Conversations",
+      "directions_text": "Directions: You will hear some conversations between two or more people. You will be asked to answer questions about what the speakers say in each conversation. The conversations will not be printed in your test book and will be spoken only one time.",
+      "directions_audio_url": "https://raw.githubusercontent.com/handa/assets/main/toeic/audio/directions_p3.mp3",
+      "total_questions": 2
+    },
+    {
+      "part_number": 4,
+      "name": "Short Talks",
+      "directions_text": "Directions: You will hear some talks given by a single speaker. You will be asked to answer questions about what the speaker says in each talk. The talks will not be printed in your test book and will be spoken only one time.",
+      "directions_audio_url": "https://raw.githubusercontent.com/handa/assets/main/toeic/audio/directions_p4.mp3",
+      "total_questions": 2
+    },
+    {
+      "part_number": 5,
+      "name": "Incomplete Sentences",
+      "directions_text": "Directions: A word or phrase is missing in each of the sentences below. Four answer choices are given below each sentence. Select the best answer to complete the sentence.",
+      "directions_audio_url": null,
+      "total_questions": 2
+    },
+    {
+      "part_number": 6,
+      "name": "Text Completion",
+      "directions_text": "Directions: Read the texts that follow. A word, phrase, or sentence is missing in parts of each text. Four answer choices for each question are given below the text. Select the best answer to complete the text.",
+      "directions_audio_url": null,
+      "total_questions": 2
+    },
+    {
+      "part_number": 7,
+      "name": "Reading Comprehension",
+      "directions_text": "Directions: In this part you will read a selection of texts, such as notices, letters, and advertisements. Each text is followed by several questions. Select the best answer for each question.",
+      "directions_audio_url": null,
+      "total_questions": 2
+    }
+  ],
+  "passages": [
+    {
+      "id_ref": "passage_p3_01",
+      "part_number": 3,
+      "title": "Questions 5-6 refer to the following conversation and schedule",
+      "content": null,
+      "audio_url": "https://raw.githubusercontent.com/handa/assets/main/toeic/audio/p3_conv_01.mp3",
+      "image_url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80",
+      "order_index": 1
+    },
+    {
+      "id_ref": "passage_p4_01",
+      "part_number": 4,
+      "title": "Questions 7-8 refer to the following airport announcement",
+      "content": null,
+      "audio_url": "https://raw.githubusercontent.com/handa/assets/main/toeic/audio/p4_talk_01.mp3",
+      "image_url": null,
+      "order_index": 1
+    },
+    {
+      "id_ref": "passage_p6_01",
+      "part_number": 6,
+      "title": "Questions 11-12 refer to the following internal company memo",
+      "content": "MEMORANDUM\n\nTo: All Employees\nFrom: Facilities Management\nDate: October 10\nSubject: Office Cafeteria Upgrade\n\nPlease be advised that the main cafeteria on the 2nd floor will be closed next Monday for kitchen equipment maintenance. [11] ----- the renovation period, boxed lunches and snacks will be available in the 4th floor lounge.\n\nWe apologize for this temporary disruption and greatly appreciate your [12] ----- as we work to improve our dining facilities.",
+      "audio_url": null,
+      "image_url": null,
+      "order_index": 1
+    },
+    {
+      "id_ref": "passage_p7_01",
+      "part_number": 7,
+      "title": "Questions 13-14 refer to the following business email",
+      "content": "From: Sarah Jenkins <s.jenkins@apexlogistics.com>\nTo: Michael Torres <m.torres@globaltrade.vn>\nDate: October 12, 2024\nSubject: Shipment Status - Order #VN-8821\n\nDear Mr. Torres,\n\nI am writing to update you on your recent order of office equipment (Order #VN-8821). The consignment was dispatched from our central warehouse in Singapore yesterday morning as scheduled.\n\nDue to adverse weather conditions along the maritime route, vessel arrival at Hai Phong Port is now anticipated on Thursday, October 17, approximately 24 hours behind the original estimated timeline.\n\nYou can track real-time container movements via our freight portal using tracking code TRK-99023. If you have any urgent requests regarding custom clearance documents, please reply directly to this email.\n\nSincerely,\nSarah Jenkins\nLogistics Coordinator, Apex Logistics",
+      "audio_url": null,
+      "image_url": null,
+      "order_index": 1
+    }
+  ],
+  "questions": [
+    {
+      "part_number": 1,
+      "question_number": 1,
+      "question_type": "PHOTO",
+      "passage_id_ref": null,
+      "question_text": null,
+      "audio_url": "https://raw.githubusercontent.com/handa/assets/main/toeic/audio/q01.mp3",
+      "image_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+      "audio_timestamp": 12.0,
+      "transcript": "(A) She is writing in a notebook.\n(B) She is typing on a computer keyboard.\n(C) She is looking through a window.\n(D) She is drinking from a cup.",
+      "vietnamese_translation": "(A) Cô ấy đang viết vào một cuốn sổ tay.\n(B) Cô ấy đang gõ phím trên máy vi tính.\n(C) Cô ấy đang nhìn qua cửa sổ.\n(D) Cô ấy đang uống nước từ một cái cốc.",
+      "explanation": "Trong bức ảnh, người phụ nữ đang ngồi tại bàn làm việc và đặt tay lên bàn phím máy tính xách tay. Đáp án (B) 'typing on a computer keyboard' miêu tả chính xác nhất hành động trọng tâm của bức ảnh.",
+      "tags": ["part1_photographs", "office_setting", "present_continuous"],
+      "correct_option": "B",
+      "options": [
+        { "option_label": "A", "option_text": "(A)", "is_correct": false },
+        { "option_label": "B", "option_text": "(B)", "is_correct": true },
+        { "option_label": "C", "option_text": "(C)", "is_correct": false },
+        { "option_label": "D", "option_text": "(D)", "is_correct": false }
+      ]
+    },
+    {
+      "part_number": 1,
+      "question_number": 2,
+      "question_type": "PHOTO",
+      "passage_id_ref": null,
+      "question_text": null,
+      "audio_url": "https://raw.githubusercontent.com/handa/assets/main/toeic/audio/q02.mp3",
+      "image_url": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=800&q=80",
+      "audio_timestamp": 25.0,
+      "transcript": "(A) Some pedestrians are crossing a street.\n(B) Vehicles are parked along the curb.\n(C) A worker is sweeping the sidewalk.\n(D) People are boarding a city bus.",
+      "vietnamese_translation": "(A) Một số người đi bộ đang băng qua đường.\n(B) Các phương tiện đang đỗ dọc theo lề đường.\n(C) Một người công nhân đang quét vỉa hè.\n(D) Mọi người đang lên xe buýt thành phố.",
+      "explanation": "Bức ảnh chụp khung cảnh giao lộ ngoài trời, với nhóm người đi bộ đang đi trên vạch kẻ qua đường. Đáp án (A) 'pedestrians are crossing a street' là mô tả chính xác nhất.",
+      "tags": ["part1_photographs", "street_scene", "pedestrians"],
+      "correct_option": "A",
+      "options": [
+        { "option_label": "A", "option_text": "(A)", "is_correct": true },
+        { "option_label": "B", "option_text": "(B)", "is_correct": false },
+        { "option_label": "C", "option_text": "(C)", "is_correct": false },
+        { "option_label": "D", "option_text": "(D)", "is_correct": false }
+      ]
+    },
+    {
+      "part_number": 2,
+      "question_number": 3,
+      "question_type": "QUESTION_RESPONSE",
+      "passage_id_ref": null,
+      "question_text": null,
+      "audio_url": "https://raw.githubusercontent.com/handa/assets/main/toeic/audio/q03.mp3",
+      "image_url": null,
+      "audio_timestamp": 40.0,
+      "transcript": "Question: Where is the annual regional marketing conference being held this year?\n(A) At the Grand Marina Hotel downtown.\n(B) Yes, I registered yesterday afternoon.\n(C) Because of our increased sales budget.",
+      "vietnamese_translation": "Câu hỏi: Hội nghị tiếp thị thường niên khu vực năm nay được tổ chức ở đâu?\n(A) Tại Khách sạn Grand Marina ở trung tâm thành phố.\n(B) Vâng, tôi đã đăng ký chiều hôm qua rồi.\n(C) Bởi vì ngân sách bán hàng của chúng ta tăng lên.",
+      "explanation": "Câu hỏi bắt đầu bằng 'Where' (Ở đâu) để hỏi địa điểm. Đáp án (A) chỉ rõ vị trí 'At the Grand Marina Hotel downtown'. Đáp án (B) bẫy câu trả lời Yes/No cho câu hỏi Wh-, đáp án (C) bẫy trả lời cho câu hỏi Why.",
+      "tags": ["part2_question_response", "wh_where", "location"],
+      "correct_option": "A",
+      "options": [
+        { "option_label": "A", "option_text": "(A)", "is_correct": true },
+        { "option_label": "B", "option_text": "(B)", "is_correct": false },
+        { "option_label": "C", "option_text": "(C)", "is_correct": false }
+      ]
+    },
+    {
+      "part_number": 2,
+      "question_number": 4,
+      "question_type": "QUESTION_RESPONSE",
+      "passage_id_ref": null,
+      "question_text": null,
+      "audio_url": "https://raw.githubusercontent.com/handa/assets/main/toeic/audio/q04.mp3",
+      "image_url": null,
+      "audio_timestamp": 55.0,
+      "transcript": "Question: Could you please submit your quarterly expense report by Friday afternoon?\n(A) About twenty thousand dollars.\n(B) Sure, I just need to verify a couple of receipts first.\n(C) No, the report was already approved by the director.",
+      "vietnamese_translation": "Câu hỏi: Bạn có thể vui lòng nộp báo cáo chi tiêu quý trước chiều thứ Sáu được không?\n(A) Khoảng hai mươi nghìn đô la.\n(B) Chắc chắn rồi, tôi chỉ cần đối chiếu lại vài hóa đơn trước đã.\n(C) Không, bản báo cáo đã được giám đốc phê duyệt rồi.",
+      "explanation": "Câu hỏi bắt đầu bằng 'Could you please...' là một lời yêu cầu lịch sự (Request). Đáp án phù hợp nhất là (B) đồng ý thực hiện yêu cầu kèm điều kiện phụ ('Sure, I just need to verify...').",
+      "tags": ["part2_question_response", "request_polite", "expense_report"],
+      "correct_option": "B",
+      "options": [
+        { "option_label": "A", "option_text": "(A)", "is_correct": false },
+        { "option_label": "B", "option_text": "(B)", "is_correct": true },
+        { "option_label": "C", "option_text": "(C)", "is_correct": false }
+      ]
+    },
+    {
+      "part_number": 3,
+      "question_number": 5,
+      "question_type": "CONVERSATION",
+      "passage_id_ref": "passage_p3_01",
+      "question_text": "What problem does the woman mention?",
+      "audio_url": null,
+      "image_url": null,
+      "audio_timestamp": 72.0,
+      "transcript": "Man: Hi Rebecca, have you finalized the presentation slides for our client meeting at 2:00 PM?\nWoman: Not yet, David. The color printer in our department ran out of toner, and IT says the replacement cartridges won't arrive until tomorrow.\nMan: Don't worry, the 4th floor finance team has a high-speed laser printer we can use.\nWoman: That would be a lifesaver! I will head up there right away.",
+      "vietnamese_translation": "Nam: Chào Rebecca, bạn đã hoàn thiện slide thuyết trình cho cuộc họp với khách hàng lúc 2:00 chiều chưa?\nNữ: Chưa David à. Máy in màu ở phòng mình bị hết mực, và bên CNTT báo hộp mực thay thế đến mai mới về.\nNam: Đừng lo, đội tài chính tầng 4 có máy in laser tốc độ cao chúng ta có thể dùng nhờ.\nNữ: Thế thì tuyệt quá! Tôi sẽ lên đó ngay bây giờ.",
+      "explanation": "Người phụ nữ nói 'The color printer in our department ran out of toner' (máy in màu hết mực). Do đó, vấn đề là trang thiết bị in ấn gặp trục trặc.",
+      "tags": ["part3_conversations", "identifying_problem", "office_equipment"],
+      "correct_option": "C",
+      "options": [
+        { "option_label": "A", "option_text": "A client cancelled an appointment", "is_correct": false },
+        { "option_label": "B", "option_text": "A presentation file was deleted", "is_correct": false },
+        { "option_label": "C", "option_text": "A piece of office equipment is out of supplies", "is_correct": true },
+        { "option_label": "D", "option_text": "The meeting room has been double-booked", "is_correct": false }
+      ]
+    },
+    {
+      "part_number": 3,
+      "question_number": 6,
+      "question_type": "CONVERSATION",
+      "passage_id_ref": "passage_p3_01",
+      "question_text": "What does the man offer to do to help the woman?",
+      "audio_url": null,
+      "image_url": null,
+      "audio_timestamp": 90.0,
+      "transcript": "(Same conversation as Question 5)",
+      "vietnamese_translation": "Người đàn ông đề xuất làm gì để giúp người phụ nữ?",
+      "explanation": "Người đàn ông gợi ý giải pháp thay thế: 'the 4th floor finance team has a high-speed laser printer we can use' (sử dụng máy in ở tầng khác).",
+      "tags": ["part3_conversations", "identifying_solution", "collaboration"],
+      "correct_option": "D",
+      "options": [
+        { "option_label": "A", "option_text": "Reschedule the client presentation", "is_correct": false },
+        { "option_label": "B", "option_text": "Call the IT department for support", "is_correct": false },
+        { "option_label": "C", "option_text": "Deliver the documents by courier", "is_correct": false },
+        { "option_label": "D", "option_text": "Suggest using equipment on another floor", "is_correct": true }
+      ]
+    },
+    {
+      "part_number": 4,
+      "question_number": 7,
+      "question_type": "SHORT_TALK",
+      "passage_id_ref": "passage_p4_01",
+      "question_text": "Where is the announcement most likely taking place?",
+      "audio_url": null,
+      "image_url": null,
+      "audio_timestamp": 110.0,
+      "transcript": "Speaker: Attention all passengers on Pacific Airlines Flight 408 with nonstop service to Tokyo Narita. Due to mechanical inspection delays on the incoming aircraft, our departure has been moved from Gate 14 to Gate 22B. Additionally, boarding will now commence at approximately 4:45 PM instead of 4:00 PM. We sincerely apologize for any inconvenience. Complimentary refreshment vouchers are available at our service desk near Gate 14 upon showing your boarding pass.",
+      "vietnamese_translation": "Người nói: Xin quý hành khách trên Chuyến bay Pacific Airlines 408 bay thẳng đến Tokyo Narita chú ý. Do sự chậm trễ trong việc kiểm tra kỹ thuật máy bay vừa hạ cánh, cửa khởi hành đã được chuyển từ Cửa 14 sang Cửa 22B. Ngoài ra, giờ lên máy bay sẽ bắt đầu vào khoảng 4:45 chiều thay vì 4:00 chiều...",
+      "explanation": "Bài nói nhắc đến các thuật ngữ đặc thù sân bay: 'passengers on Pacific Airlines Flight 408', 'departure has been moved from Gate 14 to Gate 22B', 'boarding', 'boarding pass'. Nơi phát thanh rõ ràng là tại sân bay (An airport).",
+      "tags": ["part4_short_talks", "location_inference", "travel_aviation"],
+      "correct_option": "B",
+      "options": [
+        { "option_label": "A", "option_text": "At a railway station", "is_correct": false },
+        { "option_label": "B", "option_text": "At an airport terminal", "is_correct": true },
+        { "option_label": "C", "option_text": "At a bus depot", "is_correct": false },
+        { "option_label": "D", "option_text": "At a ferry terminal", "is_correct": false }
+      ]
+    },
+    {
+      "part_number": 4,
+      "question_number": 8,
+      "question_type": "SHORT_TALK",
+      "passage_id_ref": "passage_p4_01",
+      "question_text": "What can passengers receive at the service counter?",
+      "audio_url": null,
+      "image_url": null,
+      "audio_timestamp": 128.0,
+      "transcript": "(Same talk as Question 7)",
+      "vietnamese_translation": "Hành khách có thể nhận được gì tại quầy dịch vụ?",
+      "explanation": "Câu cuối bài nói: 'Complimentary refreshment vouchers are available at our service desk near Gate 14' (Phiếu đồ ăn thức uống miễn phí có sẵn tại bàn dịch vụ).",
+      "tags": ["part4_short_talks", "detail_listening", "vouchers"],
+      "correct_option": "A",
+      "options": [
+        { "option_label": "A", "option_text": "Food and drink coupons", "is_correct": true },
+        { "option_label": "B", "option_text": "Free hotel accommodation", "is_correct": false },
+        { "option_label": "C", "option_text": "Upgraded first-class tickets", "is_correct": false },
+        { "option_label": "D", "option_text": "Discounted luggage tags", "is_correct": false }
+      ]
+    },
+    {
+      "part_number": 5,
+      "question_number": 9,
+      "question_type": "INCOMPLETE_SENTENCE",
+      "passage_id_ref": null,
+      "question_text": "Ms. Patterson ----- the corporate financial audit before leaving for the Singapore branch next Friday.",
+      "audio_url": null,
+      "image_url": null,
+      "audio_timestamp": null,
+      "transcript": null,
+      "vietnamese_translation": "Bà Patterson sẽ hoàn thành việc kiểm toán tài chính doanh nghiệp trước khi khởi hành đến chi nhánh Singapore vào thứ Sáu tới.",
+      "explanation": "Cụm thời gian 'before leaving... next Friday' chỉ một hành động sẽ xảy ra và hoàn tất trong tương lai. Chủ ngữ là ngôi thứ ba số ít 'Ms. Patterson', do đó thì tương lai đơn 'will complete' là cấu trúc ngữ pháp chính xác nhất.",
+      "tags": ["part5_incomplete_sentence", "grammar_tenses", "future_simple"],
+      "correct_option": "C",
+      "options": [
+        { "option_label": "A", "option_text": "completed", "is_correct": false },
+        { "option_label": "B", "option_text": "completing", "is_correct": false },
+        { "option_label": "C", "option_text": "will complete", "is_correct": true },
+        { "option_label": "D", "option_text": "was completed", "is_correct": false }
+      ]
+    },
+    {
+      "part_number": 5,
+      "question_number": 10,
+      "question_type": "INCOMPLETE_SENTENCE",
+      "passage_id_ref": null,
+      "question_text": "The newly hired marketing specialist presented her campaign strategy ----- and convinced the executive board.",
+      "audio_url": null,
+      "image_url": null,
+      "audio_timestamp": null,
+      "transcript": null,
+      "vietnamese_translation": "Chuyên gia tiếp thị mới được tuyển dụng đã trình bày chiến lược chiến dịch của mình một cách thuyết phục và đã thuyết phục được ban điều hành.",
+      "explanation": "Vị trí cần điền bổ nghĩa cho động từ 'presented' (trình bày như thế nào?). Do đó cần một trạng từ chỉ thể cách (Adverb). 'persuasively' (một cách thuyết phục) là trạng từ có đuôi -ly hợp nghĩa và đúng ngữ pháp.",
+      "tags": ["part5_incomplete_sentence", "part_of_speech", "adverb"],
+      "correct_option": "D",
+      "options": [
+        { "option_label": "A", "option_text": "persuade", "is_correct": false },
+        { "option_label": "B", "option_text": "persuasive", "is_correct": false },
+        { "option_label": "C", "option_text": "persuasion", "is_correct": false },
+        { "option_label": "D", "option_text": "persuasively", "is_correct": true }
+      ]
+    },
+    {
+      "part_number": 6,
+      "question_number": 11,
+      "question_type": "TEXT_COMPLETION",
+      "passage_id_ref": "passage_p6_01",
+      "question_text": "Select the best answer for blank [11] in the memorandum.",
+      "audio_url": null,
+      "image_url": null,
+      "audio_timestamp": null,
+      "transcript": null,
+      "vietnamese_translation": "Chọn đáp án thích hợp nhất cho chỗ trống [11] trong bản ghi nhớ.",
+      "explanation": "Phía sau chỗ trống là cụm danh từ 'the renovation period' (khoảng thời gian cải tạo). Giới từ 'During' (Trong suốt) đi cùng cụm danh từ chỉ khoảng thời gian là chính xác. 'While' và 'Although' cần theo sau bởi một mệnh đề (S + V).",
+      "tags": ["part6_text_completion", "grammar_prepositions", "during_vs_while"],
+      "correct_option": "A",
+      "options": [
+        { "option_label": "A", "option_text": "During", "is_correct": true },
+        { "option_label": "B", "option_text": "While", "is_correct": false },
+        { "option_label": "C", "option_text": "Although", "is_correct": false },
+        { "option_label": "D", "option_text": "Unless", "is_correct": false }
+      ]
+    },
+    {
+      "part_number": 6,
+      "question_number": 12,
+      "question_type": "TEXT_COMPLETION",
+      "passage_id_ref": "passage_p6_01",
+      "question_text": "Select the best answer for blank [12] in the memorandum.",
+      "audio_url": null,
+      "image_url": null,
+      "audio_timestamp": null,
+      "transcript": null,
+      "vietnamese_translation": "Chọn đáp án thích hợp nhất cho chỗ trống [12] trong bản ghi nhớ.",
+      "explanation": "Sau tính từ sở hữu 'your' cần một danh từ. Trong ngữ cảnh xin lỗi vì sự bất tiện của việc sửa chữa, cụm từ lịch sự thường dùng là 'appreciate your patience' (cảm kích sự kiên nhẫn của các bạn).",
+      "tags": ["part6_text_completion", "vocabulary_business_collocation", "patience"],
+      "correct_option": "B",
+      "options": [
+        { "option_label": "A", "option_text": "patiently", "is_correct": false },
+        { "option_label": "B", "option_text": "patience", "is_correct": true },
+        { "option_label": "C", "option_text": "patient", "is_correct": false },
+        { "option_label": "D", "option_text": "patientize", "is_correct": false }
+      ]
+    },
+    {
+      "part_number": 7,
+      "question_number": 13,
+      "question_type": "READING_COMPREHENSION",
+      "passage_id_ref": "passage_p7_01",
+      "question_text": "What is the main purpose of the email?",
+      "audio_url": null,
+      "image_url": null,
+      "audio_timestamp": null,
+      "transcript": null,
+      "vietnamese_translation": "Mục đích chính của bức email là gì?",
+      "explanation": "Đầu thư ghi rõ: 'I am writing to update you on your recent order of office equipment (Order #VN-8821)' và thông báo thời gian tàu cập cảng bị dời lại do thời tiết xấu. Như vậy mục đích là thông báo sự điều chỉnh trong lịch trình vận chuyển (delivery schedule update).",
+      "tags": ["part7_reading_comprehension", "main_purpose", "business_correspondence"],
+      "correct_option": "B",
+      "options": [
+        { "option_label": "A", "option_text": "To request payment for customs duties", "is_correct": false },
+        { "option_label": "B", "option_text": "To provide an update on a delivery schedule", "is_correct": true },
+        { "option_label": "C", "option_text": "To advertise a new cargo shipping route", "is_correct": false },
+        { "option_label": "D", "option_text": "To apologize for damaged merchandise", "is_correct": false }
+      ]
+    },
+    {
+      "part_number": 7,
+      "question_number": 14,
+      "question_type": "READING_COMPREHENSION",
+      "passage_id_ref": "passage_p7_01",
+      "question_text": "When is the cargo now expected to reach Hai Phong Port?",
+      "audio_url": null,
+      "image_url": null,
+      "audio_timestamp": null,
+      "transcript": null,
+      "vietnamese_translation": "Khi nào lô hàng hiện dự kiến sẽ đến Cảng Hải Phòng?",
+      "explanation": "Trong đoạn văn: 'vessel arrival at Hai Phong Port is now anticipated on Thursday, October 17, approximately 24 hours behind the original estimated timeline.'",
+      "tags": ["part7_reading_comprehension", "fact_finding", "dates_logistics"],
+      "correct_option": "C",
+      "options": [
+        { "option_label": "A", "option_text": "Tuesday, October 15", "is_correct": false },
+        { "option_label": "B", "option_text": "Wednesday, October 16", "is_correct": false },
+        { "option_label": "C", "option_text": "Thursday, October 17", "is_correct": true },
+        { "option_label": "D", "option_text": "Friday, October 18", "is_correct": false }
+      ]
+    }
+  ]
+}

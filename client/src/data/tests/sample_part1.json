@@ -1,0 +1,264 @@
+{
+  "part": 1,
+  "passages": [
+    {
+      "id": "p1-01",
+      "audioFile": "/audio/test01/p1-01.mp3",
+      "audioScript": "(A) She is adjusting her protective helmet. (B) She is packing some blueprints into a tube. (C) She is examining some architectural plans. (D) She is installing a window frame.",
+      "imagePrompt": "A sharp, realistic photograph of a professional female architect in business casual wear and a white hard hat standing over a wooden drafting table inside a bright construction site office.",
+      "imageUrl": null,
+      "text": null,
+      "startTime": 0,
+      "endTime": 15.35,
+      "questions": [
+        {
+          "number": 1,
+          "text": null,
+          "options": [
+            {
+              "key": "A",
+              "text": "She is adjusting her protective helmet."
+            },
+            {
+              "key": "B",
+              "text": "She is packing some blueprints into a tube."
+            },
+            {
+              "key": "C",
+              "text": "She is examining some architectural plans."
+            },
+            {
+              "key": "D",
+              "text": "She is installing a window frame."
+            }
+          ],
+          "answer": "C",
+          "explanation": "Đáp án C đúng vì người phụ nữ đang xem xét bản vẽ thiết kế trên bàn.",
+          "tags": [
+            "action-verb",
+            "detail"
+          ],
+          "audio_timestamp": 0,
+          "silence_after_seconds": 5
+        }
+      ],
+      "duration": 15.35,
+      "silenceAfterSeconds": 5
+    },
+    {
+      "id": "p1-02",
+      "audioFile": "/audio/test01/p1-02.mp3",
+      "audioScript": "(A) One of the men is taking notes on a notepad. (B) A woman is plugging a cable into a laptop. (C) The attendees are shaking hands across the table. (D) All of the chairs are pushed under the table.",
+      "imagePrompt": "Three colleagues in a meeting room.",
+      "imageUrl": null,
+      "text": null,
+      "startTime": 20.35,
+      "endTime": 40.31,
+      "questions": [
+        {
+          "number": 2,
+          "text": null,
+          "options": [
+            {
+              "key": "A",
+              "text": "One of the men is taking notes on a notepad."
+            },
+            {
+              "key": "B",
+              "text": "A woman is plugging a cable into a laptop."
+            },
+            {
+              "key": "C",
+              "text": "The attendees are shaking hands across the table."
+            },
+            {
+              "key": "D",
+              "text": "All of the chairs are pushed under the table."
+            }
+          ],
+          "answer": "A",
+          "explanation": "Đáp án A đúng vì một người đàn ông đang ghi chú.",
+          "tags": [
+            "action-verb"
+          ],
+          "audio_timestamp": 20.35,
+          "silence_after_seconds": 5
+        }
+      ],
+      "duration": 19.96,
+      "silenceAfterSeconds": 5
+    },
+    {
+      "id": "p1-03",
+      "audioFile": "/audio/test01/p1-03.mp3",
+      "audioScript": "(A) A customer is paying at the cash register. (B) Pastries are being baked in an oven. (C) Stools have been stacked in a corner. (D) Containers have been arranged on a countertop.",
+      "imagePrompt": "Coffee shop counter.",
+      "imageUrl": null,
+      "text": null,
+      "startTime": 45.31,
+      "endTime": 62.04,
+      "questions": [
+        {
+          "number": 3,
+          "text": null,
+          "options": [
+            {
+              "key": "A",
+              "text": "A customer is paying at the cash register."
+            },
+            {
+              "key": "B",
+              "text": "Pastries are being baked in an oven."
+            },
+            {
+              "key": "C",
+              "text": "Stools have been stacked in a corner."
+            },
+            {
+              "key": "D",
+              "text": "Containers have been arranged on a countertop."
+            }
+          ],
+          "answer": "D",
+          "explanation": "Đáp án D đúng vì các bình chứa được xếp trên quầy.",
+          "tags": [
+            "passive-state"
+          ],
+          "audio_timestamp": 45.31,
+          "silence_after_seconds": 5
+        }
+      ],
+      "duration": 16.73,
+      "silenceAfterSeconds": 5
+    },
+    {
+      "id": "p1-04",
+      "audioFile": "/audio/test01/p1-04.mp3",
+      "audioScript": "(A) He is loading merchandise into a delivery van. (B) He is scanning a label on a cardboard box. (C) He is assembling a metal storage shelf. (D) Several crates are being unloaded from a forklift.",
+      "imagePrompt": "Warehouse worker.",
+      "imageUrl": null,
+      "text": null,
+      "startTime": 67.04,
+      "endTime": 85.16,
+      "questions": [
+        {
+          "number": 4,
+          "text": null,
+          "options": [
+            {
+              "key": "A",
+              "text": "He is loading merchandise into a delivery van."
+            },
+            {
+              "key": "B",
+              "text": "He is scanning a label on a cardboard box."
+            },
+            {
+              "key": "C",
+              "text": "He is assembling a metal storage shelf."
+            },
+            {
+              "key": "D",
+              "text": "Several crates are being unloaded from a forklift."
+            }
+          ],
+          "answer": "B",
+          "explanation": "Đáp án B đúng vì nhân viên đang quét mã vạch trên thùng carton.",
+          "tags": [
+            "action-verb"
+          ],
+          "audio_timestamp": 67.04,
+          "silence_after_seconds": 5
+        }
+      ],
+      "duration": 18.12,
+      "silenceAfterSeconds": 5
+    },
+    {
+      "id": "p1-05",
+      "audioFile": "/audio/test01/p1-05.mp3",
+      "audioScript": "(A) Some pedestrians are crossing a busy street. (B) Bicycles are being repaired on a sidewalk. (C) Bicycles have been secured in a bike rack. (D) Trees are being planted near a building entrance.",
+      "imagePrompt": "Bicycles parked outside building.",
+      "imageUrl": null,
+      "text": null,
+      "startTime": 90.16,
+      "endTime": 107.35,
+      "questions": [
+        {
+          "number": 5,
+          "text": null,
+          "options": [
+            {
+              "key": "A",
+              "text": "Some pedestrians are crossing a busy street."
+            },
+            {
+              "key": "B",
+              "text": "Bicycles are being repaired on a sidewalk."
+            },
+            {
+              "key": "C",
+              "text": "Bicycles have been secured in a bike rack."
+            },
+            {
+              "key": "D",
+              "text": "Trees are being planted near a building entrance."
+            }
+          ],
+          "answer": "C",
+          "explanation": "Đáp án C đúng vì xe đạp đã được khóa trong giá để xe.",
+          "tags": [
+            "passive-state"
+          ],
+          "audio_timestamp": 90.16,
+          "silence_after_seconds": 5
+        }
+      ],
+      "duration": 17.19,
+      "silenceAfterSeconds": 5
+    },
+    {
+      "id": "p1-06",
+      "audioFile": "/audio/test01/p1-06.mp3",
+      "audioScript": "(A) A receptionist is handing an item to a guest. (B) A traveler is pulling her luggage up a staircase. (C) A bellhop is loading luggage onto a cart. (D) A computer monitor has been placed on the floor.",
+      "imagePrompt": "Hotel front desk receptionist.",
+      "imageUrl": null,
+      "text": null,
+      "startTime": 112.35,
+      "endTime": 131.85,
+      "questions": [
+        {
+          "number": 6,
+          "text": null,
+          "options": [
+            {
+              "key": "A",
+              "text": "A receptionist is handing an item to a guest."
+            },
+            {
+              "key": "B",
+              "text": "A traveler is pulling her luggage up a staircase."
+            },
+            {
+              "key": "C",
+              "text": "A bellhop is loading luggage onto a cart."
+            },
+            {
+              "key": "D",
+              "text": "A computer monitor has been placed on the floor."
+            }
+          ],
+          "answer": "A",
+          "explanation": "Đáp án A đúng vì nhân viên lễ tân đang đưa đồ cho khách.",
+          "tags": [
+            "action-verb"
+          ],
+          "audio_timestamp": 112.35,
+          "silence_after_seconds": 5
+        }
+      ],
+      "duration": 19.5,
+      "silenceAfterSeconds": 5
+    }
+  ]
+}

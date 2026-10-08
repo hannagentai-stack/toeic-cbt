@@ -1,0 +1,16 @@
+{
+  "name": "toeic-cbt-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate:tests": "npm --prefix client run validate:tests",
+    "build:timeline": "tsx scripts/build-timeline.ts",
+    "dev": "npm --prefix client run dev",
+    "build": "npm --prefix client run build"
+  },
+  "dependencies": {
+    "tsx": "^4.23.15",
+    "zod": "^4.6.5"
+  }
+}

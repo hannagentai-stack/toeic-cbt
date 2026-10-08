@@ -1,0 +1,14 @@
+{
+  "name": "toeic-exam-scripts",
+  "version": "1.0.0",
+  "description": "Script import đề thi TOEIC từ JSON và CSV vào PostgreSQL",
+  "type": "module",
+  "scripts": {
+    "import:json": "node import_test.js --file ../data/sample_mini_test.json",
+    "import:dry-run": "node import_test.js --file ../data/sample_mini_test.json --dry-run"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "pg": "^8.13.1"
+  }
+}
