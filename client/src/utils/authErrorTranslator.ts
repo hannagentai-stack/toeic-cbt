@@ -73,11 +73,31 @@ export function translateAuthError(error: any): string {
     return 'Định dạng địa chỉ email không hợp lệ. Vui lòng kiểm tra lại.';
   }
 
-  // 9. Lỗi Google OAuth
+  // 9. Lỗi Google OAuth & Provider
+  if (
+    rawMessage.includes('access_denied') ||
+    rawMessage.includes('user denied access') ||
+    rawMessage.includes('user_cancelled')
+  ) {
+    return 'Bạn đã từ chối cấp quyền hoặc phiên đăng nhập Google đã bị hủy.';
+  }
+
+  if (rawMessage.includes('provider is not enabled') || rawMessage.includes('unsupported provider')) {
+    return 'Nhà cung cấp Google chưa được kích hoạt trên hệ thống máy chủ Supabase.';
+  }
+
+  if (rawMessage.includes('validation_failed')) {
+    return 'Xác thực tài khoản Google không thành công. Vui lòng thử lại sau ít phút.';
+  }
+
+  if (rawMessage.includes('popup closed') || rawMessage.includes('popup_closed_by_user')) {
+    return 'Cửa sổ đăng nhập đã bị đóng trước khi hoàn tất thao tác.';
+  }
+
   if (rawMessage.includes('oauth') || rawMessage.includes('google')) {
     return 'Đăng nhập bằng tài khoản Google thất bại hoặc đã bị hủy. Vui lòng thử lại.';
   }
 
   // Thông báo fallback
-  return error.message || 'Thao tác không thành công. Vui lòng thử lại sau.';
+  return error.message || error.error_description || 'Thao tác không thành công. Vui lòng thử lại sau.';
 }

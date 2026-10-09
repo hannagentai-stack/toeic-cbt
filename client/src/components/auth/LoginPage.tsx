@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mail, Lock, Eye, EyeOff, LogIn, AlertCircle, RefreshCw } from 'lucide-react';
 import { AuthLayout } from './AuthLayout';
 import { useAuth } from '../../context/AuthContext';
 import { EmailConfirmationNotice } from './EmailConfirmationNotice';
+import { translateAuthError } from '../../utils/authErrorTranslator';
 
 interface LoginPageProps {
   onNavigateToRegister: () => void;
@@ -15,7 +16,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
   onNavigateToForgotPassword,
   onLoginSuccess,
 }) => {
-  const { signInWithEmail, signInWithGoogle } = useAuth();
+  const { isAuthenticated, isLoading: isAuthLoading, signInWithEmail, signInWithGoogle } = useAuth();
 
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
@@ -24,6 +25,44 @@ export const LoginPage: React.FC<LoginPageProps> = ({
   const [isGoogleLoading, setIsGoogleLoading] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [unconfirmedEmail, setUnconfirmedEmail] = useState<string | null>(null);
+
+  // 1. Tự động chuyển hướng nếu người dùng đã có phiên đăng nhập hợp lệ
+  useEffect(() => {
+    console.log('[LoginPage] Kiểm tra phiên:', { isAuthLoading, isAuthenticated });
+    if (!isAuthLoading && isAuthenticated) {
+      console.log('[LoginPage] Phát hiện đã đăng nhập -> tự động chuyển tiếp trang');
+      if (onLoginSuccess) {
+        onLoginSuccess();
+      }
+    }
+  }, [isAuthLoading, isAuthenticated, onLoginSuccess]);
+
+  // 2. Bắt lỗi trả về từ URL (OAuth callback error) hoặc sessionStorage và hiển thị tiếng Việt
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const hashParams = new URLSearchParams(
+      window.location.hash.startsWith('#') ? window.location.hash.slice(1) : window.location.hash
+    );
+    const urlError =
+      urlParams.get('error') ||
+      urlParams.get('error_description') ||
+      hashParams.get('error') ||
+      hashParams.get('error_description');
+
+    const sessionError = sessionStorage.getItem('toeic_oauth_error');
+    const rawError = urlError || sessionError;
+
+    if (rawError) {
+      sessionStorage.removeItem('toeic_oauth_error');
+      console.warn('[LoginPage] Hiển thị lỗi xác thực:', rawError);
+      const translated = translateAuthError({ message: rawError });
+      setErrorMessage(translated);
+
+      if (urlError) {
+        window.history.replaceState({}, document.title, window.location.pathname);
+      }
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

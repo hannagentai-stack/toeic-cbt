@@ -28,6 +28,12 @@ export const supabase: SupabaseClient = createClient(supabaseUrl, supabaseAnonKe
   },
 });
 
+console.log('[Supabase Client] Khởi tạo:', {
+  configured: isSupabaseConfigured,
+  detectSessionInUrl: true,
+  flowType: 'pkce',
+});
+
 /**
  * Upload file lên Supabase Storage bucket ('toeic-audio', 'toeic-images' hoặc 'test-media')
  * Tự động chuyển đổi sang CDN public URL

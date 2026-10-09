@@ -65,7 +65,7 @@ export type ActiveSection =
   | 'NOT_FOUND';
 
 export function App() {
-  const { isAdmin } = useAuth();
+  const { isAuthenticated, isLoading, isAdmin } = useAuth();
   const [examData, setExamData] = useState<ExamData>(sampleExamData as unknown as ExamData);
   const [activeSection, setActiveSection] = useState<ActiveSection>(() => {
     try {
@@ -106,10 +106,19 @@ export function App() {
         return 'HISTORY';
       }
       const saved = sessionStorage.getItem('toeic_active_section') as any;
-      if (saved) return saved;
+      if (saved && saved !== 'LOGIN' && saved !== 'REGISTER') return saved;
     } catch {}
     return 'HOME';
   });
+
+  // Tự động chuyển tiếp nếu người dùng đã đăng nhập nhưng giao diện vẫn đang hiển thị màn hình LOGIN
+  useEffect(() => {
+    console.log('[App] Trạng thái:', { activeSection, isAuthenticated, isLoading });
+    if (!isLoading && isAuthenticated && activeSection === 'LOGIN') {
+      console.log('[App] Đã đăng nhập nhưng đang ở LOGIN -> kích hoạt handleLoginSuccess');
+      handleLoginSuccess();
+    }
+  }, [isLoading, isAuthenticated, activeSection]);
 
   useEffect(() => {
     try {
